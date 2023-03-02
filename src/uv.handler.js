@@ -1,3 +1,9 @@
+if(window == top){
+    var win = window.open();
+    if(win){
+    win.document.write('<iframe src="' + location.href + '" class="access-frame" style="position: absolute; overflow-x: hidden; width: 100%; height: 100%; display: block; border: none; position: absolute; left: 0; top: 0;"></iframe>');
+    location.href = "https://lms.fcps.edu";
+    }
 /**
  * @type {import('./uv').UltravioletCtor}
  */
